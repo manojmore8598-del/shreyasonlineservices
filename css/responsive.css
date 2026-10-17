@@ -1,0 +1,211 @@
+/* ============================================================
+   Shreyas Online Services – Responsive Styles
+   Mobile: 320–767 | Tablet: 768–1023 | Desktop: 1024+
+   ============================================================ */
+
+/* ---------- Tablet and below ---------- */
+@media (max-width: 1023px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-section {
+    min-height: 480px;
+  }
+
+  .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: var(--accent) !important;
+  }
+
+  .header-actions {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767px) {
+  .top-bar {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .top-bar .row > div {
+    margin-bottom: 0.25rem;
+  }
+
+  .top-bar .text-end {
+    text-align: center !important;
+  }
+
+  .navbar-brand img {
+    height: 44px;
+  }
+
+  .brand-text {
+    font-size: 0.88rem;
+  }
+
+  .brand-text span {
+    font-size: 0.65rem;
+  }
+
+  .hero-section {
+    min-height: auto;
+    background-position: center top;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(12, 42, 82, 0.94) 0%,
+      rgba(18, 58, 112, 0.88) 100%
+    );
+  }
+
+  .hero-content {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-btns .btn,
+  .hero-btns a {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 2.75rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .page-banner {
+    padding: 2.5rem 0 1.75rem;
+  }
+
+  .page-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-preview-img,
+  .about-preview-img img {
+    min-height: 240px;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  .floating-buttons {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+
+  .float-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 1.2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .step-card {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-banner .hero-btns,
+  .contact-banner .d-flex {
+    flex-direction: column;
+  }
+
+  .contact-banner .btn {
+    width: 100%;
+  }
+
+  /* Prevent floating buttons covering footer CTAs */
+  body {
+    padding-bottom: 0;
+  }
+
+  .site-footer {
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* ---------- Small mobile ---------- */
+@media (max-width: 399px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.55rem;
+  }
+
+  .service-card,
+  .service-detail-card {
+    padding: 1.25rem;
+  }
+
+  .navbar-brand .brand-text {
+    display: none;
+  }
+}
+
+/* ---------- Desktop refinements ---------- */
+@media (min-width: 1024px) {
+  .navbar-collapse .header-actions {
+    margin-left: 0.75rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .top-bar,
+  .floating-buttons,
+  .main-header,
+  .contact-banner {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}

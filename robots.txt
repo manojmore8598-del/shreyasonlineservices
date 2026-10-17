@@ -1,0 +1,8 @@
+# Shreyas Online Services – robots.txt
+# Replace YOUR-DOMAIN.com with your real domain after deployment.
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update domain when live)
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
